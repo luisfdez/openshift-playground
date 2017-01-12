@@ -3,7 +3,7 @@ FROM jupyterhub/jupyterhub
 MAINTAINER Luis Fernández Álvarez <luis.fdezalv@gmail.com>
 
 # Oauthenticator PR
-RUN python3 -m pip install git+https://github.com/luisfdez/oauthenticator.git@5c36617f67935634167edcc42fee61e15453f0d9 && \
+RUN python3 -m pip install git+https://github.com/jupyterhub/oauthenticator.git@5d8d7bf1c031ad7a40ffe1a6ba018e18cf7fe6b6 && \
     pip install jupyterhub-kubespawner
 
 # Create oauthenticator directory and put necessary files in it
