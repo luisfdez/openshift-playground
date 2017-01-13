@@ -1,4 +1,4 @@
-FROM jupyterhub/jupyterhub
+FROM 172.30.88.184:5000/lfernand/jupyterhub
 
 MAINTAINER Luis Fernández Álvarez <luis.fdezalv@gmail.com>
 
