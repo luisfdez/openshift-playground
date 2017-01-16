@@ -10,6 +10,9 @@ c = get_config()
 ##
 
 c.JupyterHub.log_level = 10
+c.Application.log_level = 10
+c.JupyterHub.debug_proxy = True
+c.Spawner.debug = True
 c.JupyterHub.cookie_secret_file = '/srv/jupyterhub/cookie_secret'
 c.JupyterHub.db_url = '/srv/jupyterhub/jupyterhub.sqlite'
 c.JupyterHub.ip = '0.0.0.0'
