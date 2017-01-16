@@ -32,7 +32,7 @@ RUN useradd -m -s /bin/bash -N -u $JH_UID $JH_USER && \
     chown -R $JH_USER:root /src/jupyterhub && \
     chown -R $JH_USER:root /srv/jupyterhub && \
     chown -R $JH_USER:root /srv/ephemeral && \
-    chmod 770 $JH_USER:root /home/$JH_USER
+    chmod 770 /home/$JH_USER
 
 #
 # Use the Oauthenticator for OpenShift
