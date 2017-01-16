@@ -1,4 +1,4 @@
-FROM jupyterhub/jupyterhub
+FROM jupyterhub/jupyterhub:0.6.1
 
 MAINTAINER Luis Fernández Álvarez <luis.fdezalv@gmail.com>
 
