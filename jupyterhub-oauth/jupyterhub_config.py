@@ -24,7 +24,7 @@ c.JupyterHub.cleanup_servers = os.environ['CLEANUP_SERVERS'] == True
 ##
 
 c.JupyterHub.authenticator_class = 'oauthenticator.openshift.LocalOpenShiftOAuthenticator'
-c.LocalOpenShiftOAuthenticator.create_system_users = True
+c.LocalOpenShiftOAuthenticator.create_system_users = False
 # OpenShift Hack - 
 with codecs.open('/var/run/secrets/kubernetes.io/serviceaccount/token', 'r', encoding='utf-8') as secret:
         c.OpenShiftOAuthenticator.client_secret = secret.read()
