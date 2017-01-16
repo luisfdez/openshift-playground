@@ -51,4 +51,4 @@ ADD entrypoint.sh entrypoint.sh
 RUN chmod a+x /srv/ephemeral/entrypoint.sh
 RUN chmod 700 /srv/ephemeral
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/srv/ephemeral/entrypoint.sh"]
