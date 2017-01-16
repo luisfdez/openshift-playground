@@ -16,8 +16,6 @@ c.JupyterHub.ip = '0.0.0.0'
 c.JupyterHub.hub_ip = '0.0.0.0'
 c.JupyterHub.port = 8000
 c.JupyterHub.cleanup_servers = os.environ['CLEANUP_SERVERS'] == True
-c.JupyterHub.confirm_no_ssl = True
-
 
 ##
 ## Authentication configuration
