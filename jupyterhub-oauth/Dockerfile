@@ -27,15 +27,12 @@ ENV HOME /home/$JH_USER
 RUN useradd -m -s /bin/bash -N -u $JH_UID $JH_USER && \
     mkdir -p $CONDA_DIR && \
     chown $JH_USER $CONDA_DIR && \
-    mkdir /srv/ephemeral
-
-#
-# Base should come already with /src/jupyterhub & /srv/jupyterhub
-#
-RUN chown -R $JH_USER:root /home/$JH_USER
-RUN chown -R $JH_USER:root /src/jupyterhub
-RUN chown -R $JH_USER:root /srv/jupyterhub
-RUN chown -R $JH_USER:root /srv/ephemeral
+    mkdir /srv/ephemeral && \
+    chown -R $JH_USER:root /home/$JH_USER && \
+    chown -R $JH_USER:root /src/jupyterhub && \
+    chown -R $JH_USER:root /srv/jupyterhub && \
+    chown -R $JH_USER:root /srv/ephemeral && \
+    chmod 770 $JH_USER:root /home/$JH_USER
 
 #
 # Use the Oauthenticator for OpenShift
