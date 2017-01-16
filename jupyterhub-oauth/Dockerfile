@@ -48,7 +48,7 @@ WORKDIR /srv/ephemeral
 ADD jupyterhub_config.py jupyterhub_config.py
 ADD entrypoint.sh entrypoint.sh
 
-RUN chmod a+x /srv/ephemeral/entrypoint.sh
-RUN chmod 700 /srv/ephemeral
+RUN chmod 775 /srv/ephemeral/entrypoint.sh
+RUN chmod 770 /srv/ephemeral
 
 ENTRYPOINT ["/srv/ephemeral/entrypoint.sh"]
