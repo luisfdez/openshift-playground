@@ -38,7 +38,7 @@ c.JupyterHub.spawner_class = 'kubespawner.KubeSpawner'
 # OpenShift Hack - The downward API doesn't provide yet information about the service name
 c.KubeSpawner.hub_connect_ip = os.environ["%s_SERVICE_HOST" % os.environ['SERVICE_NAME'].upper()]
 c.KubeSpawner.start_timeout = 60 * 5 
-c.KubeSpawner.singleuser_image_spec = 'openshift/minimal-notebook-img'
+c.KubeSpawner.singleuser_image_spec = '172.30.88.184:5000/openshift/minimal-notebook-img@sha256:be8e64142ddfd61084c80c4f4197f4d4d91847bcfb005c1240d42d6032a427ee'
 c.KubeSpawner.mem_limit = '100M'
 c.KubeSpawner.mem_guarantee='100M'
 c.KubeSpawner.cpu_limit = 0.5
