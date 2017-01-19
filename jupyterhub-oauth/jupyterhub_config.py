@@ -16,6 +16,7 @@ c.Spawner.debug = True
 c.JupyterHub.cookie_secret_file = '/srv/jupyterhub/cookie_secret'
 c.JupyterHub.db_url = '/srv/jupyterhub/jupyterhub.sqlite'
 c.JupyterHub.ip = '0.0.0.0'
+c.JupyterHub.proxy_api_ip = '0.0.0.0'
 c.JupyterHub.hub_ip = '0.0.0.0'
 c.JupyterHub.port = 8000
 c.JupyterHub.cleanup_servers = os.environ['CLEANUP_SERVERS'] == True
