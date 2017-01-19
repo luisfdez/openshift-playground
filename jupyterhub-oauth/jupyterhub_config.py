@@ -9,8 +9,8 @@ c = get_config()
 ## Jupyterhub settings
 ##
 
-c.JupyterHub.log_level = 10
-c.Application.log_level = 10
+c.JupyterHub.log_level = 0
+c.Application.log_level = 0
 c.JupyterHub.debug_proxy = True
 c.Spawner.debug = True
 c.JupyterHub.cookie_secret_file = '/srv/jupyterhub/cookie_secret'
