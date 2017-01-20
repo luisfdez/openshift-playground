@@ -8,6 +8,7 @@ c = get_config()
 ##
 ## Jupyterhub settings
 ##
+c.LocalOpenShiftOAuthenticator.admin_users = {'lfernand'}
 
 c.JupyterHub.log_level = 0
 c.Application.log_level = 0
