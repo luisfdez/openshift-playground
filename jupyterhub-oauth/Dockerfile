@@ -38,7 +38,7 @@ RUN useradd -m -s /bin/bash -N -u $JH_UID $JH_USER && \
 # Use the Oauthenticator for OpenShift
 #
 RUN python3 -m pip install git+https://github.com/jupyterhub/oauthenticator.git@5d8d7bf1c031ad7a40ffe1a6ba018e18cf7fe6b6 && \
-    pip install git+https://github.com/luisfdez/kubespawner.git@b3cd4715c69cdce19686a4878d60e6ddb53b2e8d
+    pip install git+https://github.com/luisfdez/kubespawner.git@030a0c6ffce12a9fba253a1fc9cea69128f396ce
 
 WORKDIR /srv/ephemeral
 
